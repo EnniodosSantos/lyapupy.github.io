@@ -1,170 +1,408 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
-        
-        
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>My Docs</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script> 
-    </head>
-
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">My Docs</a>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav ms-md-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>lyapupy</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="https://unpkg.com/katex@0/dist/katex.min.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-bs-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#commands" class="nav-link">Commands</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Lyapupy";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> lyapupy
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Lyapupy</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installing">Installing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#basic-usage">Basic Usage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#list-of-functions">List of Functions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#available-maps">Available Maps</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#inicial-condition-generator">Inicial Condition Generator</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#map-evolution">Map Evolution</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lyapunov-estimated">Lyapunov Estimated</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lyapunov-convergence">Lyapunov Convergence</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#theoretical-lyapunov">Theoretical Lyapunov</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lyapunov-summary">Lyapunov Summary</a>
+    </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#list-of-maps">List of Maps</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#logistic-map">Logistic Map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ulam-map">Ulam Map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tent-map">Tent Map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#gauss-map">Gauss Map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bernoulli-map">Bernoulli Map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tent-map_1">Tent Map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#asymmetric-tent-map">Asymmetric Tent Map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#chebyshev-map">Chebyshev Map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cusp-map">Cusp Map</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#references">References</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="pt/">Lyapupy (Português)</a>
+                </li>
+              </ul>
+      </div>
     </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    </nav>
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">lyapupy</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Lyapupy</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="about-lyapupy">About Lyapupy</h1>
+<p><code>lyapupy</code> is a pure Python library for the generation and analysis of synthetic chaotic time series derived from discrete dynamical systems with exact Lyapunov exponents and analytically known invariant measures. - Tentei aqui</p>
+<h2 id="installing">Installing</h2>
+<p>Exchaos can be installed via the command line using</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><code>pip install lyapupy</code></li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
-            </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+<h2 id="basic-usage">Basic Usage</h2>
+<h2 id="list-of-functions">List of Functions</h2>
+<h4 id="available-maps">Available Maps</h4>
+<div class="func-header">
+    <b>available_maps</b><span>()</span>
 </div>
 
-    </body>
+<p>Return the list of chaotic maps implemented in the package.</p>
+<dl>
+<dt><strong>Returns:</strong></dt>
+<dd>
+<p><strong>values</strong> (<em>list of str</em>): Names of the available chaotic maps.</p>
+</dd>
+<dt><strong>Return type:</strong></dt>
+<dd>
+<p>list</p>
+</dd>
+</dl>
+<p><strong>Examples</strong></p>
+<pre><code class="language-python">&gt;&gt;&gt; available_maps()
+['Gauss',
+ 'Logistic',
+ 'Bernoulli',
+ 'Ulam',
+ 'Tent',
+ 'Asymmetric Tent',
+ 'Chebyshev']
+&gt;&gt;&gt;
+</code></pre>
+<h4 id="inicial-condition-generator">Inicial Condition Generator</h4>
+<div class="func-header">
+    <b>initial_condition</b><span>(map_name)</span>
+</div>
+
+<p>Return a random initial condition within the domain of the selected chaotic map.</p>
+<dl>
+<dt><strong>Parameters:</strong></dt>
+<dd>
+<p><strong>map_name</strong> (<em>str</em>): Name of the chaotic map.</p>
+</dd>
+<dt><strong>Returns:</strong></dt>
+<dd>
+<p><strong>value</strong> (<em>float</em>): A random initial condition sampled from the map domain.</p>
+</dd>
+<dt><strong>Return type:</strong></dt>
+<dd>
+<p>float</p>
+</dd>
+</dl>
+<p><strong>Examples</strong></p>
+<pre><code class="language-python">&gt;&gt;&gt; initial_condition(&quot;Tent&quot;)
+0.3416435874184909
+&gt;&gt;&gt;
+</code></pre>
+<h4 id="map-evolution">Map Evolution</h4>
+<div class="func-header">
+    <b>map_time_series</b><span>(map_name, x0, steps, trans, prec=50, dec=False, plot=False)</span>
+</div>
+
+<p>Computes the evolution of a chaotic map.</p>
+<dl>
+<dt><strong>Parameters:</strong></dt>
+<dd>
+<p><strong>map_name</strong> (<em>str</em>): Name of the chaotic map.</p>
+</dd>
+<dd>
+<p><strong>x0</strong> (<em>float</em>): Initial condition for the iterations.</p>
+</dd>
+<dd>
+<p><strong>steps</strong> (<em>int</em>): Number of iterations used to compute the map evolution.</p>
+</dd>
+<dd>
+<p><strong>trans</strong> (<em>int</em>): Number of transient iterations to be discarded.</p>
+</dd>
+<dd>
+<p><strong>prec</strong> (<em>int</em>): Decimal precision (default: 50).</p>
+</dd>
+<dd>
+<p><strong>dec</strong> (<em>bool</em>): Whether to return a <code>Decimal</code> object (if <code>True</code>) or a <code>np.array</code> (if <code>False</code>, default).</p>
+</dd>
+<dd>
+<p><strong>plot</strong> (<em>bool</em>): Whether to show a plot of the convergence evolution (default: <code>False</code>).</p>
+</dd>
+<dt><strong>Returns:</strong></dt>
+<dd><strong>values</strong> (<em>array or Decimal</em>): Time series containing the evolution of the chaotic map.</dd>
+<dt><strong>Return type:</strong></dt>
+<dd>numpy.array or decimal.Decimal</dd>
+</dl>
+<p><strong>Examples</strong></p>
+<pre><code class="language-python">&gt;&gt;&gt; map_time_serie(&quot;Logistic&quot;, 0.69, 1000, 100)
+array([9.66107169e-01, 1.30976429e-01, 4.55286417e-01,...,2.03055676e-01])
+&gt;&gt;&gt;
+&gt;&gt;&gt; map_time_serie(&quot;Ulam&quot;, 0.69, 1000, 100, dec=True)
+[Decimal('-0.6870338025456384356961511819355663023943768799766'),Decimal('0.05596910831936139542992034181417084026349458638572'),...,Decimal('0.11798100275668302052603852642095837137197711931708')]
+&gt;&gt;&gt;
+&gt;&gt;&gt; map_time_serie(&quot;Tent&quot;, 0.69, 1000, 100, plot=True)
+output plot
+array([0.88, 0.24, 0.48, 0.96, ... , 0.64, 0.72, 0.56])
+</code></pre>
+<p><img alt="&quot;Example of output plot&quot;" src="download%20%283%29.png" />]</p>
+<h4 id="lyapunov-estimated">Lyapunov Estimated</h4>
+<div class="func-header">
+    <b>lyapunov_estimated</b><span>(map_name, x0, steps, trans, prec=50, dec=False)</span>
+</div>
+
+<p>Computes the estimated Lyapunov Exponent of a chaotic map.</p>
+<dl>
+<dt><strong>Parameters:</strong></dt>
+<dd><strong>map_name</strong> (<em>str</em>): Name of the chaotic map.</dd>
+<dd><strong>x0</strong> (<em>float</em>): Initial condition.</dd>
+<dd><strong>steps</strong> (<em>int</em>): Number of iterations used in the Lyapunov average.</dd>
+<dd><strong>trans</strong> (<em>int</em>): Number of transient iterations discarded.</dd>
+<dd><strong>prec</strong> (<em>int</em>): Decimal precision.</dd>
+<dd><strong>dec</strong> (<em>bool</em>): Whether to return a <code>Decimal</code> object (if <code>True</code>) or a <code>float</code> (if <code>False</code>, default).</dd>
+<dt><strong>Returns:</strong></dt>
+<dd><strong>values</strong> (<em>float or Decimal</em>): The estimated Lyapunov Exponent of the chaotic map.</dd>
+<dt><strong>Return type:</strong></dt>
+<dd>float or decimal.Decimal</dd>
+</dl>
+<p><strong>Examples</strong></p>
+<pre><code class="language-python">&gt;&gt;&gt;lyapunov_estimated(&quot;Tent&quot;, 0.69, 1000, 100)
+0.6931471805599453
+&gt;&gt;&gt;
+&gt;&gt;&gt;lyapunov_estimated(&quot;Tent&quot;, 0.69, 1000, 100, dec=True)
+Decimal('0.69314718055994530941723212145817656807550013436')
+
+</code></pre>
+<h4 id="lyapunov-convergence">Lyapunov Convergence</h4>
+<div class="func-header">
+    <b>lyapunov_convergence</b><span>(map_name, x0, steps, trans, prec=50, dec=False, plot=False)</span>
+</div>
+
+<p>Computes the convergence of the Lyapunov Exponent of a chaotic map.</p>
+<dl>
+<dt><strong>Parameters:</strong></dt>
+<dd><strong>map_name</strong> (<em>str</em>): Name of the chaotic map.</dd>
+<dd><strong>x0</strong> (<em>float</em>): Initial condition.</dd>
+<dd><strong>steps</strong> (<em>int</em>): Number of iterations used in the Lyapunov average.</dd>
+<dd><strong>trans</strong> (<em>int</em>): Number of transient iterations discarded.</dd>
+<dd><strong>prec</strong> (<em>int</em>): Decimal precision.</dd>
+<dd><strong>dec</strong> (<em>bool</em>): Whether to return a <code>Decimal</code> object.</dd>
+<dd><strong>plot</strong> (<em>bool</em>): Whether to show a plot of the convergence.</dd>
+<dt><strong>Returns:</strong></dt>
+<dd><strong>values</strong> (<em>array or Decimal</em>): The convergence values of the Lyapunov Exponent.</dd>
+<dt><strong>Return type:</strong></dt>
+<dd>numpy.array or decimal.Decimal</dd>
+</dl>
+<pre><code class="language-python">&gt;&gt;&gt;x0 = initial_condition(&quot;Logistic&quot;)
+&gt;&gt;&gt;lyapunov_convergence(&quot;Logistic&quot;, x0, 1000, 1000, plot=True)
+array([0.90973773, 0.41082964, 0.69907782, 0.74430939..., 0.69323049])
+</code></pre>
+<p><img alt="&quot;Example of output plot&quot;" src="download%20%284%29.png" />]</p>
+<h4 id="theoretical-lyapunov">Theoretical Lyapunov</h4>
+<div class="func-header">
+    <b>theoretical_lyapunov</b><span>(map_name, dec=False)</span>
+</div>
+
+<p>Computes the theoretical Lyapunov Exponent of a chaotic map.</p>
+<dl>
+<dt><strong>Parameters:</strong></dt>
+<dd><strong>map_name</strong> (<em>str</em>): Name of the chaotic map.</dd>
+<dd><strong>dec</strong> (<em>bool</em>): Whether to return a <code>Decimal</code> object (if <code>True</code>) or a <code>float</code> (if <code>False</code>, default).</dd>
+<dt><strong>Returns:</strong></dt>
+<dd><strong>values</strong> (<em>float or Decimal</em>): The theoretical Lyapunov Exponent of the chaotic map.</dd>
+<dt><strong>Return type:</strong></dt>
+<dd>float or decimal.Decimal</dd>
+</dl>
+<pre><code class="language-python">&gt;&gt;&gt;theoretical_lyapunov(&quot;Tent&quot;)
+0.6931471805599453
+</code></pre>
+<h4 id="lyapunov-summary">Lyapunov Summary</h4>
+<div class="func-header">
+    <b>lyapunov_summary</b><span>(map_name, x0, steps, trans, prec=50, dec=False, plot=False)</span>
+</div>
+
+<dl>
+<dt><strong>Parameters:</strong></dt>
+<dd><strong>map_name</strong> (<em>str</em>): Name of the chaotic map.</dd>
+<dd><strong>x0</strong> (<em>float</em>): Initial condition.</dd>
+<dd><strong>steps</strong> (<em>int</em>): Number of iterations used in the Lyapunov average.</dd>
+<dd><strong>trans</strong> (<em>int</em>): Number of transient iterations discarded.</dd>
+<dd><strong>prec</strong> (<em>int</em>): Decimal precision.</dd>
+<dd><strong>dec</strong> (<em>bool</em>): Whether to return a <code>Decimal</code> object.</dd>
+<dd><strong>plot</strong> (<em>bool</em>): Whether to show a summary plot.</dd>
+<dt><strong>Returns:</strong></dt>
+<dd><strong>values</strong> (<em>dict</em>): Dictionary containing the chaotic map's name, theoretical Lyapunov Exponent, estimated Lyapunov Exponent, and the map's time series.</dd>
+<dt><strong>Return type:</strong></dt>
+<dd>dict</dd>
+</dl>
+<pre><code class="language-python">&gt;&gt;&gt;lyapunov_summary(&quot;Tent&quot;, 0.69, 1000, 100)
+{'map': 'Tent map',
+ 'theoretical': 0.6931471805599453,
+ 'estimated': 0.6931471805599453,
+ 'time_serie': array([0.88, 0.24, 0.48, 0.96, 0.08, 0.16, 0.32,..., 0.72, 0.56])}
+</code></pre>
+<h2 id="list-of-maps">List of Maps</h2>
+<p>In chaos theory, maps (also known as iterated maps, difference equations, or recursion relations) are dynamical systems in which time is discrete rather than continuous. [^1] The simulation of discrete maps is fundamental, as they serve as controlled environments for the study of chaotic systems, allowing the observation of complex phenomena through the evolution of discrete orbits rather than continuous flows.[^1]</p>
+<p>To see the avaliable maps you can use the <code>available_maps()</code> method</p>
+<p>The following maps can be simulated with this package:</p>
+<h3 id="logistic-map">Logistic Map</h3>
+<p>Input string: <code>"Logistic"</code></p>
+<p>Equation: <span class="arithmatex">\(x_{n+1} = rx_n(1 - x_n)\)</span></p>
+<h3 id="ulam-map">Ulam Map</h3>
+<p>Input string: <code>"Ulam"</code></p>
+<p><span class="arithmatex">\(x_{n+1} = 1 - 2x_n^2\)</span></p>
+<h3 id="tent-map">Tent Map</h3>
+<p>Input string: <code>"Tent"</code></p>
+<h3 id="gauss-map">Gauss Map</h3>
+<p>Input string: <code>"Gauss"</code></p>
+<p><span class="arithmatex">\(x_{n+1} = \frac{1}{x_n} - \lfloor \frac{1}{x_n} \rfloor\)</span></p>
+<h3 id="bernoulli-map">Bernoulli Map</h3>
+<p>Input string: <code>"Bernoulli"</code></p>
+<p><span class="arithmatex">\(x_{n+1} = 2x_n \pmod 1\)</span></p>
+<h3 id="tent-map_1">Tent Map</h3>
+<p>Input string: <code>"Tent"</code></p>
+<p>Equation: <span class="arithmatex">\(x_{n+1} = \begin{cases} \mu x_n &amp; \text{for } x_n &lt; \frac{1}{2} \\ \mu (1 - x_n) &amp; \text{for } x_n \geq \frac{1}{2} \end{cases}\)</span></p>
+<h3 id="asymmetric-tent-map">Asymmetric Tent Map</h3>
+<p>Input string: <code>"Asymmetric Tent"</code></p>
+<h3 id="chebyshev-map">Chebyshev Map</h3>
+<p>Input string: <code>"Chebyshev"</code></p>
+<p>Equation:  <span class="arithmatex">\(x_{n+1} = \cos(k \arccos(x_n))\)</span></p>
+<h3 id="cusp-map">Cusp Map</h3>
+<p>Input string: <code>"Cusp"</code></p>
+<p>Equation: <span class="arithmatex">\(x_{n+1} = 1 - \sqrt{|1 - 2x_n|}\)</span></p>
+<h2 id="references">References</h2>
+<p>[^1]: [^1]: STROGATZ, Steven H. <strong>Nonlinear Dynamics and Chaos</strong>: With Applications to Physics, Biology, Chemistry, and Engineering. 2. ed. [S.l.]: CRC Press, 2014.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="pt/" class="btn btn-neutral float-right" title="Lyapupy (Português)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="pt/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="javascripts/katex.js"></script>
+      <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
 </html>
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-02-01 00:31:47.383179+00:00
+Build Date UTC : 2026-02-07 03:38:33.684150+00:00
 -->

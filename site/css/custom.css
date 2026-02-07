@@ -1,0 +1,17 @@
+/* Estilo para automatizar o cabeçalho azul da função */
+.func-header {
+    background-color: #e7f2fa;
+    border-top: 1px solid #337ab7;
+    border-bottom: 1px solid #337ab7;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+.func-header b {
+    color: #000;
+}
+
+.func-header span {
+    color: #337ab7;
+}
