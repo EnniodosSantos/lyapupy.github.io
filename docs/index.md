@@ -1,12 +1,12 @@
-# About Lyapupy
+# About Lyappy
 
-`lyapupy` is a pure Python library for the generation and analysis of synthetic chaotic time series derived from discrete dynamical systems with exact Lyapunov exponents and analytically known invariant measures. - Tentei aqui
+`lyappy` is a pure Python library for the generation and analysis of synthetic chaotic time series derived from discrete dynamical systems with exact Lyapunov exponents and analytically known invariant measures. - Tentei aqui
 
 ## Installing
 
 Exchaos can be installed via the command line using
 
-* `pip install lyapupy`
+* `pip install lyappy`
 
 
 ## Basic Usage

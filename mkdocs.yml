@@ -1,11 +1,11 @@
-site_name: lyapupy
+site_name: lyappy
 
 theme:
   name: readthedocs
 
 nav:
-  - Lyapupy: index.md
-  - Lyapupy (Português): pt/index.md
+  - Lyappy: index.md
+  - Lyappy (Português): pt/index.md
 
 markdown_extensions:
   - def_list
